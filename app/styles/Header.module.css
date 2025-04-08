@@ -1,0 +1,452 @@
+/* Header Section */
+.headerSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    height: 800px;
+    width: 100%;
+    background: url("/backgroundimage.jpg") no-repeat center center;
+    background-size: cover; /* Ensures full coverage */
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Left Side Content */
+  .content {
+    max-width: 50%;
+    margin-left: 40px;
+    z-index: 2;
+  }
+  
+  /* Hello Message Icon */
+.helloMessage {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #FF9429 50%, #FFBB01 50%); /* Half-Half Effect */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Message Tail */
+  .helloMessage::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;  /* Position the tail */
+    left: 20px;  /* Adjust based on alignment */
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #FF9429; /* Match Left Side of Background */
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+  }
+  
+  
+  /* Intro "I'm" */
+  .introText {
+    font-size: 38px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Main Heading */
+  .mainHeading {
+    font-size: 78px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .mainHeading span {
+    color: #ef0454;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    max-width: 500px;
+  }
+  
+  /* Button Group */
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Say Hello Button */
+  .sayHelloButton {
+    background-color: #ef0454;
+    color: white;
+    border: none;
+    padding: 18px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sayHelloButton .buttonIcon {
+    margin-left: 10px;
+  }
+  
+  .sayHelloButton:hover {
+    background-color: #c7033e;
+    transform: scale(1.05);
+  }
+  
+  /* Watch Button (YouTube) */
+  .watchButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: #ef0454;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .watchButton .buttonIcon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .watch{
+    color: #333;
+    font-weight: lighter;
+  }
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .headerSection {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+      height: auto;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  }
+  /* Social Sidebar */
+.socialSidebar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.verticalLine {
+    width: 2px;
+    height: 40px;
+    background-color: #ef0454;
+}
+
+.smallVerticalLine {
+    width: 2px;
+    height: 40px;
+    background-color: #ef0454;
+}
+
+.followText {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ef0454;
+    writing-mode: vertical-rl; /* Vertical text */
+    text-align: center;
+}
+
+.socialIcon {
+    font-size: 20px;
+    color: #ef0454;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.socialIcon:hover {
+    color: #c7033e;
+    transform: scale(1.2);
+}
+/* Container */
+.container {
+  position: relative;
+}
+/* Video Popup */
+.videoPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 170px;
+  width: 100vw;
+  height: 60vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Video Container */
+.videoContainer {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.videoContainer iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/* Close Icon */
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closeIcon:hover {
+  color: red;
+}
+/* Header Section */
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px;
+  height: 800px;
+  width: 100%;
+  background: url("/backgroundimage.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Left Side Content */
+.content {
+  max-width: 50%;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+/* Hello Message Icon */
+.helloMessage {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #FF9429 50%, #FFBB01 50%);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% { transform: translateY(-5px); }
+  100% { transform: translateY(5px); }
+}
+
+/* Intro "I'm" */
+.introText {
+  font-size: 38px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Main Heading */
+.mainHeading {
+  font-size: 78px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.mainHeading span {
+  color: #ef0454;
+}
+
+/* Description */
+.description {
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+/* Button Group */
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Say Hello Button */
+.sayHelloButton {
+  background-color: #ef0454;
+  color: white;
+  border: none;
+  padding: 18px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sayHelloButton .buttonIcon {
+  margin-left: 10px;
+}
+
+.sayHelloButton:hover {
+  background-color: #c7033e;
+  transform: scale(1.05);
+}
+
+/* Watch Button (YouTube) */
+.watchButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #ef0454;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.watchButton .buttonIcon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.watch {
+  color: #333;
+  font-weight: lighter;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .headerSection {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+      height: auto;
+  }
+
+  .content {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .introText {
+      font-size: 28px;
+  }
+
+  .mainHeading {
+      font-size: 50px;
+  }
+
+  .description {
+      font-size: 18px;
+  }
+
+  .sayHelloButton {
+      padding: 14px 20px;
+      font-size: 14px;
+      border-radius: 8px;
+  }
+
+  .watchButton {
+      font-size: 14px;
+      padding: 10px 18px;
+      margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introText {
+      font-size: 24px;
+  }
+
+  .mainHeading {
+      font-size: 36px;
+      text-align: center;
+  }
+
+  .description {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .buttonGroup {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sayHelloButton {
+      padding: 12px 18px;
+      font-size: 14px;
+      width: 90%;
+      justify-content: center;
+  }
+
+  .watchButton {
+      font-size: 14px;
+      width: 90%;
+      justify-content: center;
+  }
+}
+.link{
+  text-decoration: none;
+}

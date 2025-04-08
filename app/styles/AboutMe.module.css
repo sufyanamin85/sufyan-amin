@@ -1,0 +1,303 @@
+.aboutMeSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: #fff;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+/* Left Side (Image + Experience Badge) */
+.leftSide {
+  width: 45%;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.experienceCircle {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 105px;
+  height: 105px;
+  transform: translate(-50%, -50%);
+  background: #ef0454;
+  color: white;
+  padding: 15px 13px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  animation: floatUpDown 1s infinite alternate ease-in-out;
+}
+
+.experience {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+@keyframes floatUpDown {
+  0% {
+      transform: translate(-50%, -45%);
+  }
+  100% {
+      transform: translate(-50%, -55%);
+  }
+}
+
+/* Right Side (Text Content) */
+.rightSide {
+  width: 50%;
+}
+
+.smallHeading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ef0454;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.underscore {
+  color: #ef0454;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mainHeading {
+  font-size: 42px;
+  font-weight: bolder;
+  margin-top: 10px;
+  color: #222;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+/* Personal Details */
+.detailsList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.detailsList li {
+  font-size: 14px;
+  color: #333;
+}
+
+.detailsList li strong {
+  color: #222;
+}
+
+/* Statistics Section */
+.statsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid gainsboro;
+  position: relative;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  font-size: 16px;
+  text-align: left;
+  color: #222;
+  flex: 1;
+  position: relative;
+}
+
+/* Vertical dividers between stats */
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50px;
+  background-color: gainsboro;
+}
+
+.stat span {
+  display: block;
+  font-size: 24px;
+  color: #ef0454;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .aboutMeSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .leftSide, .rightSide {
+      width: 100%;
+  }
+
+  .experienceCircle {
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+  }
+
+  .mainHeading {
+      font-size: 36px;
+  }
+
+  .description {
+      font-size: 16px;
+  }
+
+  .detailsList {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .statsWrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .stat {
+      text-align: center;
+  }
+
+  .stat:not(:last-child)::after {
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMeSection {
+      padding: 40px 5%;
+  }
+
+  .mainHeading {
+      font-size: 32px;
+  }
+
+  .experienceCircle {
+      width: 90px;
+      height: 90px;
+      font-size: 14px;
+      top: 30%;
+  left: 10%;
+  }
+
+  .experience {
+      font-size: 24px;
+  }
+
+  .detailsList li {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutMeSection {
+      padding: 30px 5%;
+  }
+
+  .mainHeading {
+      font-size: 28px;
+  }
+
+  .description {
+      font-size: 14px;
+  }
+
+  .experienceCircle {
+      width: 80px;
+      height: 80px;
+      font-size: 12px;
+      padding: 10px;
+      top: 30%;
+  left: 10%;
+  }
+
+  .experience {
+      font-size: 20px;
+  }
+
+  .detailsList {
+      grid-template-columns: 1fr;
+  }
+
+  .detailsList li {
+      font-size: 12px;
+  }
+
+  .statsWrapper {
+      flex-direction: column;
+  }
+
+  .stat span {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  .aboutMeSection {
+      padding: 20px 5%;
+  }
+
+  .mainHeading {
+      font-size: 24px;
+  }
+
+  .description {
+      font-size: 12px;
+  }
+
+  .experienceCircle {
+      width: 70px;
+      height: 70px;
+      font-size: 10px;
+      padding: 8px;
+  }
+
+  .experience {
+      font-size: 18px;
+  }
+
+  .detailsList li {
+      font-size: 11px;
+  }
+
+  .stat span {
+      font-size: 18px;
+  }
+}

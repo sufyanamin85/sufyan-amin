@@ -1,0 +1,145 @@
+/* Portfolio Section */
+.portfolioSection {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.textContent {
+    margin-bottom: 40px;
+}
+
+.smallText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.largeText {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ef0454;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Slider Styles */
+.slider {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden; /* Ensures the image doesn't overflow outside the card */
+    border-radius: 10px;
+    margin: 0 4px; /* Add spacing between cards */
+}
+
+.imageContainer {
+    width: 90%; /* Reduce width slightly for better spacing */
+    height: 420px; /* Increase height slightly */
+    margin: 0 auto; /* Center the image container */
+    position: relative;
+    overflow: hidden; /* Prevent the zoomed image from overflowing */
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-position: center;
+}
+
+.imageContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: inherit; /* Ensures the zoom effect is applied to the background image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer:hover::before {
+    transform: scale(1.1); /* Zoom the image slightly on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #ef0454, transparent);
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.imageContainer:hover .overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .imageContainer {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .card {
+        margin: 0 10px; /* Reduce spacing for smaller screens */
+    }
+}
+/* Loader Container */
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Loader Animation */
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid transparent;
+    border-top: 6px solid #EF0454; /* Your preferred color */
+    border-right: 6px solid #EF0454;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Loader Animation Keyframes */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

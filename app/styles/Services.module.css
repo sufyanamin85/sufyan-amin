@@ -1,0 +1,192 @@
+/* Services Section */
+.servicesSection {
+    padding: 60px 20px; /* Default padding for smaller screens */
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .textContent {
+    margin-bottom: 40px;
+  }
+  
+  .smallText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .largeText {
+    font-size: 36px;
+    font-weight: bold;
+    color: #dc3545;
+    margin-top: 10px;
+  }
+  
+  /* Cards Container */
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards in a row */
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .serviceImage {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* If you want circular images */
+    object-fit: cover; /* Ensures image fits well */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .serviceImage:hover {
+    animation: moveUpDown 1s ease-in-out;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .cardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  
+  /* Large screens (default: 1024px and above) */
+  @media (min-width: 1024px) {
+    .servicesSection {
+      padding-left: 55px; /* Add 20px padding on large screens */
+      padding-right: 55px;
+    }
+  }
+  
+  /* Medium screens (up to 1024px) */
+  @media (max-width: 1024px) {
+    .cardsContainer {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  
+    .largeText {
+      font-size: 32px; /* Adjust title font size for medium screens */
+    }
+  }
+  
+  /* Small screens (up to 768px) */
+  @media (max-width: 768px) {
+    .cardsContainer {
+      grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+  
+    .card {
+      padding: 30px; /* Reduce padding for smaller screens */
+    }
+  
+    .icon {
+      font-size: 35px; /* Adjust icon size for smaller screens */
+    }
+  
+    .largeText {
+      font-size: 28px; /* Smaller font for the section title */
+    }
+  }
+  
+  /* Extra small screens (up to 480px) */
+  @media (max-width: 480px) {
+    .card {
+      padding: 20px; /* Further reduce padding for very small screens */
+    }
+  
+    .icon {
+      font-size: 30px; /* Reduce icon size for extra-small screens */
+    }
+  
+    .cardTitle {
+      font-size: 20px; /* Adjust card title size */
+    }
+  
+    .cardDescription {
+      font-size: 14px; /* Adjust description font size */
+    }
+  
+    .largeText {
+      font-size: 24px; /* Further reduce section title font size */
+    }
+  }
+  /* Loader Container */
+  .loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Loader Animation */
+  .loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid transparent;
+    border-top: 6px solid #EF0454; /* Your preferred color */
+    border-right: 6px solid #EF0454;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Loader Animation Keyframes */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
