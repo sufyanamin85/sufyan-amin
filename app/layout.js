@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,15 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Personal - Portfolio",
+  title: "Rafay - Portfolio",
   description: "Created by Muhammad Rafay Abdullah",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/tablogo.png" type="image/png" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-       
         {children}
       </body>
     </html>

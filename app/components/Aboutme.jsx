@@ -25,7 +25,10 @@ const AboutMe = () => {
         </div>
       </div>
       <div className={styles.rightSide}>
-      <p className={styles.smallHeading}><span className={styles.underscore}>____</span> About Me</p>
+      <div className={styles.sectionTitle}>
+          <div className={styles.line}></div>
+          <span>About Me</span>
+        </div>
 
         <h2 className={styles.mainHeading}>Well experienced Web Developer</h2>
         <p className={styles.description}>

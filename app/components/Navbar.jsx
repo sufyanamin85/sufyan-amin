@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoClose, IoMenu } from "react-icons/io5";
 import styles from "../styles/Navbar.module.css";
-
+import { FaWhatsapp } from "react-icons/fa"; // Import the icon
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -86,10 +86,16 @@ const Navbar = () => {
 
           {/* Download CV Button */}
           <div className={styles.downloadCv}>
-            <Link href="/cv.pdf" download className={styles.cvButton}>
-              Download CV
-            </Link>
-          </div>
+  <Link
+    href="https://wa.me/03365464893"
+    className={styles.cvButton}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Say Hello
+    <FaWhatsapp className={styles.whatsappIcon} />
+  </Link>
+</div>
         </div>
       </div>
 
@@ -130,11 +136,17 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Download CV Button */}
-          <div className={styles.mobileCvButton}>
-            <Link href="/cv.pdf" download className={styles.cvButton}>
-              Download CV
-            </Link>
-          </div>
+          <div className={styles.downloadCv}>
+  <Link
+    href="https://wa.me/03365464893"
+    className={styles.cvButton}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Say Hello
+    <FaWhatsapp className={styles.whatsappIcon} />
+  </Link>
+</div>
         </div>
       )}
     </nav>

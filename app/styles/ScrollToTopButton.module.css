@@ -1,0 +1,35 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: #ef0454;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: bounceUpDown 1.5s infinite ease-in-out;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrollToTop:hover {
+    background-color: #d10348;
+  }
+  
+  .arrowIcon {
+    font-size: 20px;
+  }
+  
+  @keyframes bounceUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -4,6 +4,8 @@ import styles from "../styles/Header.module.css";
 import { FaEnvelope, FaYoutube, FaFacebookF, FaTwitter, FaInstagram, FaGoogle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5"; // Cross icon
 import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa"; // Import the icon
+
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 const Header = () => {
@@ -32,9 +34,6 @@ const Header = () => {
 <a href="https://www.linkedin.com/in/muhammadrafayabdullah" target="_blank" rel="noopener noreferrer">
   <FaLinkedin className={styles.socialIcon} />
 </a>
-
-          <FaInstagram className={styles.socialIcon} />
-          <FaGoogle className={styles.socialIcon} />
           <div className={styles.smallVerticalLine}></div>
         </div>
 
@@ -46,7 +45,7 @@ const Header = () => {
 
           <p className={styles.introText}>I'm</p>
           <h1 className={styles.mainHeading}>
-            Abdul Rafay Abdullah <br /> <span>Web Developer</span>
+            Muhammad Rafay Abdullah <br /> <span>Web Developer</span>
           </h1>
           <p className={styles.description}>
             Web Developer with 8+ years experience that keeps customers coming back for services. Makes best effort.
@@ -54,12 +53,12 @@ const Header = () => {
           <div className={styles.buttonGroup}>
           <Link href="https://wa.me/03365464893" target="_blank" rel="noopener noreferrer" className={styles.link}>
           <button className={styles.sayHelloButton}>
-               Say Hello <FaEnvelope className={styles.buttonIcon} />
+               Say Hello <FaWhatsapp className={styles.whatsappIcon} />
             </button>
               </Link>
            
             <div className={styles.container}>
-      {/* YouTube Button */}
+      {/* YouTube Button */} 
       <button className={styles.watchButton} onClick={() => setShowVideo(true)}>
         <FaYoutube size={70} className={styles.buttonIcon} />
         <span>

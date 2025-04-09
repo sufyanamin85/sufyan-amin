@@ -7,11 +7,13 @@ import Aboutme from "./components/Aboutme";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const Page = () => {
   return (
     <div>
       <Navbar />
+      <ScrollToTopButton/>
       <Header  />
       <section id="about"><Aboutme /></section>
       <section id="skills"><Skills /></section>

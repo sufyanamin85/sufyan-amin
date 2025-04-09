@@ -5,8 +5,8 @@ const Skills = () => {
   const skills = [
     { name: "Frontend Development", percentage: 90 },
     { name: "Backend Development", percentage: 85 },
-    { name: "React.js & Next.js", percentage: 95 },
-    { name: "Python & Django", percentage: 80 },
+    { name: "React.js & Next.js", percentage: 92 },
+    { name: "Python Flask & Django", percentage: 80 },
     { name: "MongoDB & SQL", percentage: 85 },
   ];
 
@@ -18,7 +18,7 @@ const Skills = () => {
           <div className={styles.line}></div>
           <span>My Skills</span>
         </div>
-        <h2 className={styles.heading}>You can imagine my skills</h2>
+        <h2 className={styles.heading}>Skills That Drive Results</h2>
         <p className={styles.description}>
           I like to share my skills and experience with new people so they 
           can realize my talents.

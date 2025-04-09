@@ -26,9 +26,9 @@ const Footer = () => {
             <p>© 2022 All rights reserved | Design & Develop by Devenue</p>
           </div>
           <div className={styles.footerLinks}>
-            <Link href="/user/Services" className={styles.footerLink}>Services</Link>
-            <Link href="/user/Portfolio" className={styles.footerLink}>Portfolio</Link>
-            <Link href="/user/ContactUs" className={styles.footerLink}>Contact</Link>
+            <Link href="#services" className={styles.footerLink}>Services</Link>
+            <Link href="#portfolio" className={styles.footerLink}>Portfolio</Link>
+            <Link href="#skills" className={styles.footerLink}>Skills</Link>
           </div>
         </div>
       </footer>
