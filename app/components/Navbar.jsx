@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Company Logo */}
         <Link href="/" className="navbar-brand">
           <Image
-            src="/devenue.png"
+            src="/navlogo.png"
             alt="Company Logo"
             width={105}
             height={65}

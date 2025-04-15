@@ -67,7 +67,33 @@ const portfolioData = [
     clientName: "Adbul Rafay Abdullah",
     category: "Web & Mobile Development",
     externalLink: "https://tripwaly.com/",
-  }
+  },
+  {
+    id: "5",
+    title: "SiteGPT",
+    images: ["/ss.png", "/ss2.png"],
+    bulletPoints: "The platform enables users to create customizable chatbots by defining intents, training models, and fine-tuning behavior to suit specific use cases. It supports multiple AI models, including GPT-based architectures, BERT, and custom pipelines, providing flexibility to optimize performance for various tasks. With real-time inference pipelines, chatbots deliver instant, context-aware responses, while users can train models on proprietary datasets in formats like CSV and JSON. An analytics dashboard offers actionable insights into chatbot performance, user engagement, and response accuracy.",
+    categories: ["Django Stack", "Generative AI", "Docker","Transformer Model","Elasticsearch"],
+    checkSteps: ["Define intents, train models, and fine-tune behavior to align with specific business needs.", "Leverage GPT-based models, BERT, or custom AI pipelines for flexible and task-optimized performance.", " Deliver instant and intelligent replies through real-time inference pipelines.","Train models using your own datasets in formats like CSV and JSON for domain-specific accuracy.","Monitor chatbot performance, user engagement, and response accuracy with actionable insights."],
+    startDate: "2024-09-05",
+    endDate: "2025-01-20",
+    clientName: "Robert Downey",
+    category: "AI/Machine Learning",
+    externalLink: "https://sitegpt.ai/",
+  },
+  {
+    id: "6",
+    title: "SiteJetAI",
+    images: ["/ss3.png" , "/ss4.png", "/ss5.png"],
+    bulletPoints: "SiteJetAI is an advanced support automation solution powered by generative AI, designed to deliver lightning-fast, hyper personalised customer support across all digital channels. It enables businesses to build AI-driven chatbots in minutes, streamlining ticket automation and enhancing customer interactions. With its powerful capabilities, SiteJetAI optimises response times, improves customer satisfaction, and simplifies support management, making it the ultimate tool for efficient, scalable customer support automation.",
+    categories: ["Django", "GPT-3", "Generative AI","Transformer Model","MySQL"],
+    checkSteps: ["Delivers instant, hyper-personalised responses across all digital channels using generative AI.", "Enables businesses to build intelligent chatbots within minutes, no coding required.", "Streamlines customer service operations by automating ticket handling and routing.","Reduces response times and boosts the quality of customer interactions."," Simplifies support management and grows effortlessly with your business."],
+    startDate: "2024-10-05",
+    endDate: "2025-02-20",
+    clientName: "Justin Fitzjerlad",
+    category: "AI/Machine Learning",
+    externalLink: "https://sitejetai.com/",
+  },
 ];
 
 const PortfolioDetails = () => {

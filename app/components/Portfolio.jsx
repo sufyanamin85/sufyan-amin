@@ -29,6 +29,18 @@ const Portfolio = () => {
       category: 'Web & Mobile Development',
       images: ['/TripWalae.jpg'],
     },
+    {
+      _id: '5',
+      title: 'SiteGPT',
+      category: 'AI/Machine Learning',
+      images: ['/ss2.png'],
+    },
+    {
+      _id: '6',
+      title: 'SiteJetAI',
+      category: 'AI/Machine Learning',
+      images: ['/ss3.png'],
+    },
   ];
 
   const settings = {
