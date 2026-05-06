@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rafay - Portfolio",
-  description: "Created by Muhammad Rafay Abdullah",
+  title: "Sufyan-Amin",
+  description: "Created by Sufyan Amin",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/tablogo.png" type="image/png" />
+        <link rel="icon" href="/sufyan-amin.png" type="image/png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import WorkFlow from "./components/WorkFlow";
 
 const Page = () => {
   return (
@@ -19,7 +20,9 @@ const Page = () => {
       <section id="skills"><Skills /></section>
       <section id="services"><Services /></section>
       <section id="portfolio"><Portfolio /></section>
+      <section id="workflow"><WorkFlow /></section>
       <section id="testimonials"><Testimonial /></section>
+
       <Footer />
     </div>
   );
