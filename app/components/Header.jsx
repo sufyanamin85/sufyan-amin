@@ -516,9 +516,9 @@ export default function Header() {
 
             {/* Description */}
             <p className="hr-desc">
-              Full-Stack & AI-Enabled Engineer with 2.5+ years of experience shipping SaaS platforms,
-              RAG-powered search engines, WhatsApp AI assistants, and intelligent automation systems
-              that cut manual operations to near zero.
+              Full-Stack & AI-Enabled Engineer with 3+ years of experience shipping SaaS platforms,
+              RAG-powered search engines, live-data AI platforms, and third-party integrations
+              that turn manual, disconnected workflows into systems that run themselves.
             </p>
 
             {/* Buttons */}

@@ -7,7 +7,7 @@ import { Sparkles, MapPin, Mail, Phone, Globe, Code2, Cpu, Layers } from 'lucide
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 const stats = [
-  { value: '2.5+', label: 'Years Experience' },
+  { value: '3+', label: 'Years Experience' },
   { value: '10+', label: 'Products Shipped' },
   { value: '5+', label: 'Happy Clients' },
   { value: '3', label: 'Countries Served' },
@@ -18,7 +18,7 @@ const details = [
   { icon: <Globe size={13} />,   label: 'Location',    value: 'Islamabad, Pakistan' },
   { icon: <Mail size={13} />,    label: 'Email',       value: 'sufyanamin85@gmail.com' },
   { icon: <Phone size={13} />,   label: 'Phone',       value: '+92 300-2672786' },
-  { icon: <Code2 size={13} />,   label: 'Experience',  value: '2.5+ Years' },
+  { icon: <Code2 size={13} />,   label: 'Experience',  value: '3+ Years' },
   { icon: <Layers size={13} />,  label: 'Freelance',   value: 'Available' },
   { icon: <Cpu size={13} />,     label: 'Speciality',  value: 'AI Systems & Full-Stack' },
 ];
@@ -31,7 +31,7 @@ const floatingBadges = [
     accent: '#ef0454',
     accentDim: 'rgba(239,4,84,0.15)',
     accentBorder: 'rgba(239,4,84,0.35)',
-    value: '2.5+',
+    value: '3+',
     label: 'Yrs Exp.',
     delay: 0,
   },
@@ -444,7 +444,7 @@ export default function AboutMe() {
             </h2>
 
             <p className="ab-desc">
-              I'm Sufyan Amin — a Full-Stack & AI-Enabled Engineer with 2.5+ years of experience
+              I'm Sufyan Amin — a Full-Stack & AI-Enabled Engineer with 3+ years of experience
               shipping scalable SaaS platforms, intelligent automation systems, and production-grade
               AI products. From WhatsApp AI assistants to RAG-powered search engines and audit
               intelligence platforms — I build end-to-end systems that solve real business problems

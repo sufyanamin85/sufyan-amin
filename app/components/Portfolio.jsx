@@ -14,6 +14,7 @@ import {
   ArrowUpRight,
   Check,
   Zap,
+  ShieldCheck,
 } from 'lucide-react';
 
 // ─── Project Data ─────────────────────────────────────────────────────────────
@@ -39,6 +40,28 @@ const projects = [
     to: '#4f46e5',
     glow: 'rgba(124,58,237,0.35)',
     Icon: MessageSquareText,
+  },
+  {
+    id: 'insighthk',
+    title: 'InsightHK',
+    category: 'Insurance Intelligence Platform',
+    tagline: 'Live insurance pricing — compared instantly, personalized per person.',
+    year: '2026',
+    company: 'Strevio.ai',
+    role: 'Full-Stack & AI Engineer',
+    stack: ['Next.js', 'Flask', 'MongoDB', 'Playwright', 'OpenRouter'],
+    highlights: [
+      'Live pricing integration layer connecting directly to multiple insurers\' own pricing infrastructure — session handling, product catalogues, and live quote endpoints normalized into one unified data model',
+      'Parallel quote-execution engine querying every provider concurrently, turning an hours-long manual comparison into a seconds-long automated one',
+      'Profile-aware eligibility engine evaluating age bands, gender-specific rules, and entry-age cutoffs so only genuinely eligible products are shown',
+      'AI-powered suitability analysis reasoning over a client\'s budget and circumstances to recommend the best-fit plan with a plain-language justification',
+      'One-click PDF and Excel export generating a fully formatted, live comparison matrix on demand',
+    ],
+    impact: 'Replaced hours of manual, insurer-by-insurer research with an instant, live, personalized comparison — architected to scale to additional providers and markets.',
+    from: '#14b8a6',
+    to: '#0d9488',
+    glow: 'rgba(20,184,166,0.3)',
+    Icon: ShieldCheck,
   },
   {
     id: 'ashford',

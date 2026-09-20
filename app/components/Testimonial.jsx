@@ -40,6 +40,22 @@ const testimonials = [
   },
   {
     id: 3,
+    name: 'Alexander Reyes',
+    designation: 'Insurance Broker & Advisor',
+    company: 'Independent — Hong Kong Market',
+    location: 'Hong Kong',
+    avatar: '/avatars/alexander.jpg',
+    initials: 'AR',
+    accentColor: '#14b8a6',
+    accentDim: 'rgba(20,184,166,0.12)',
+    accentBorder: 'rgba(20,184,166,0.28)',
+    project: 'InsightHK Insurance Comparison Platform',
+    rating: 5,
+    quote:
+      "Before this, comparing plans for a client meant opening three different insurer sites and re-entering the same details each time — easily an hour per person. Sufyan built a platform that pulls live pricing from every insurer at once and tells me which plan actually fits the client's situation, not just the cheapest one. It's completely changed how fast I can advise people.",
+  },
+  {
+    id: 4,
     name: 'Daniel Voss',
     designation: 'CEO & Co-Founder',
     company: 'Devenue',
@@ -55,7 +71,7 @@ const testimonials = [
       'Sufyan delivered TripWaly end-to-end — web dashboard, backend APIs, and a React Native mobile app — all in one project. His code is clean, well-structured, and actually maintainable. He handled every technical decision confidently and brought real product thinking to the table, not just implementation.',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Amara Chen',
     designation: 'Operations Lead',
     company: 'Strevio.ai',
@@ -714,7 +730,7 @@ export default function Testimonial() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {[
-              { num: '2.5+', label: 'Years of\nExperience' },
+              { num: '3+', label: 'Years of\nExperience' },
               { num: '10+', label: 'Production\nSystems Shipped' },
               { num: '100%', label: 'Client\nSatisfaction' },
             ].map((s, i) => (

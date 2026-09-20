@@ -30,6 +30,7 @@ const skillData = [
     icon: '⚙️',
     skills: [
       { name: 'Node.js & Express', level: 'Expert', pct: 93 },
+      { name: 'NestJS', level: 'Advanced', pct: 80 },
       { name: 'Python & Flask', level: 'Expert', pct: 90 },
       { name: 'REST APIs', level: 'Expert', pct: 94 },
       { name: 'JWT Auth & OAuth 2.0', level: 'Expert', pct: 90 },
@@ -47,6 +48,7 @@ const skillData = [
     skills: [
       { name: 'MongoDB & Atlas', level: 'Expert', pct: 92 },
       { name: 'MongoDB Aggregation', level: 'Expert', pct: 88 },
+      { name: 'SQL', level: 'Advanced', pct: 80 },
       { name: 'AWS EC2 & S3', level: 'Advanced', pct: 82 },
       { name: 'Firebase', level: 'Advanced', pct: 84 },
       { name: 'Docker', level: 'Advanced', pct: 80 },
@@ -67,6 +69,7 @@ const skillData = [
       { name: 'Ollama / Gemma 2', level: 'Advanced', pct: 83 },
       { name: 'Whisper + FFmpeg', level: 'Advanced', pct: 82 },
       { name: 'AI Report Generation', level: 'Expert', pct: 91 },
+      { name: 'AI Suitability & Recommendation Engines', level: 'Advanced', pct: 87 },
     ],
   },
   {
@@ -78,6 +81,7 @@ const skillData = [
     skills: [
       { name: 'WHAPI (WhatsApp API)', level: 'Expert', pct: 93 },
       { name: 'Puppeteer', level: 'Expert', pct: 90 },
+      { name: 'Playwright', level: 'Advanced', pct: 84 },
       { name: 'Google Sheets & Drive API', level: 'Expert', pct: 91 },
       { name: 'Programmable Search Engine', level: 'Expert', pct: 88 },
       { name: 'Google OAuth 2.0', level: 'Expert', pct: 87 },
